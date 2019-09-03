@@ -5,37 +5,33 @@ import java.util.Scanner;
 public class Ejercicio4 {
     public static void main(String[] args){
         int nAlumnos = 0;
-        String palabra = "";
-        char letra;
+        String letra = "a";
 
-
-        Scanner ingreso = new Scanner(System.in);
-        String[] alumnos = new String[nAlumnos];
+        Scanner ingresoCantidad = new Scanner(System.in);
         System.out.println("Ingrese la cantidad de alumnos: ");
-         nAlumnos = ingreso.nextInt();
+         nAlumnos = ingresoCantidad.nextInt();
+
+        String[] alumnos = new String[nAlumnos];//arreglo
 
 
         for (int i = 0; i < nAlumnos; i++) {
-            Scanner entrada = new Scanner(System.in);
+            Scanner entradaNombre = new Scanner(System.in);
             System.out.println("Ingrese el nombre y apellido: ");
-            alumnos[i] = entrada.next();
+            alumnos[i] = entradaNombre.next();
         }
+        while(!letra.equals("Fin")){//para que el programa finalice con FIN
+            Scanner entradaLetra = new Scanner(System.in);
+            System.out.println("Ingrese una letra: ");
+            letra = entradaLetra.next();
 
-        while(palabra == "fin"){
-            Scanner entrada = new Scanner(System.in);
-
-
-
-
+            for(String nombre : alumnos){//me muestra la primera letra del
+                                        // arreglo que yo elija
+                if(nombre.charAt(0) == letra.charAt(0)){
+                    System.out.println(nombre);
+                }
             }
 
-
-
         }
-
-
-
-
-
     }
+}
 

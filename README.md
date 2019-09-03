@@ -11,10 +11,10 @@
     - [1.6 - Matriz 3x3](#16-matriz-3x3)
     - [1.7 - Matriz 10x10](#17-matriz-10x10)
 
-- [2. Clases](#2-clases)
+- [2. Clases21](#2-clases)
     - [2.1 - Administradores y vendedores](#21-administradores-y-vendedores)
 
-- [3. Colecciones](#3-colecciones)
+- [3. Supermercado31](#3-colecciones)
     - [3.1 - Ticket](#31---ticket).
     - [3.2 - Empresas y empleados](#32---empresa-empleado).
     - [3.3 - Alumnos y asignaturas](#33---alumno-asignatura).
@@ -107,7 +107,7 @@ Como recordatorio, para generar números aleatorios entre 0 y 100 podemos usar:
 Random r = new Random();
 int aleatorio = r.nextInt(100);
 ```
-## 2. Clases
+## 2. Clases21
 
 ### 2.1 - Administradores y vendedores
 
@@ -124,7 +124,7 @@ El sueldo debe calcularse en el método getSueldo() de la siguiente forma:
 
 Usar un List de tipo empleado para resolver este ejercicio.
 
-## 3. Colecciones
+## 3. Supermercado31
 
 ### 3.1 - Ticket
 
