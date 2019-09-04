@@ -11,7 +11,7 @@ public class Ticket {
     private Date fecha;
     private List <Item> items;
 
-    public Ticket(String id, Date fecha, List<Item> items) {
+    public Ticket(String id, Date fecha) {
         this.id = id;
         this.fecha = fecha;
         this.items = new ArrayList<>();
@@ -41,6 +41,7 @@ public class Ticket {
         return sb.toString();
     }
     public void agregarItem(Item item){
+
         items.add(item);
     }
 
@@ -53,9 +54,7 @@ public class Ticket {
         return items.contains(item);
 
     }
-    public String imprimirLinea(){
-        return items.
-    }
+
     public List<Item> buscarProducto(String producto) {
         return items.stream().filter(i -> i.getNombre().contains(producto))
                 .collect(Collectors.toList());

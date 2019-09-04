@@ -15,7 +15,7 @@ public class TicketTest {
 
     @BeforeMethod
     public void setUp() {
-        ticket = new Ticket(1,new Date());
+        ticket = new Ticket("1",new Date());
     }
     @Test
     public void testAgregarItem()  {
@@ -50,15 +50,7 @@ public class TicketTest {
 
         assertEquals(items, itemsEsperados);
     }
-    @Test
-    public void getProductos(){
-        for(Ticket i : ticket ){
-            System.out.println(i.getId());
-        }
-        ticket.stream().map(i ->i.getNombre()).
-                forEach(i -> System.out.println("Item : "+ i));
 
-    }
 
 
 }
